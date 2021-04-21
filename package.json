@@ -1,0 +1,24 @@
+{
+  "name": "binary-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run tslint && rimraf ./build && tsc",
+    "buildAndStart": "npm run build && npm run start",
+    "start": "node build/index.js",
+    "tslint": "tslint -c tslint.json 'src/*.ts'"
+  },
+  "author": "Diana Gruzdeva",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "codelyzer": "^6.0.1",
+    "readline-sync": "^1.4.10",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  }
+}
