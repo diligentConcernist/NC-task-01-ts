@@ -1,17 +1,11 @@
-let canvas: HTMLCanvasElement;
-let ctx: CanvasRenderingContext2D | null;
+let canvas = (<HTMLCanvasElement>document.getElementById("myCanvas"));
+let ctx = canvas.getContext("2d");
 
 const a = new BinarySearchTree<number>();
 
 window.onload = () => {
-  canvas = document.createElement("canvas");
-  ctx = canvas.getContext("2d");
-  canvas.id = "myCanvas";
   canvas.width = 1200;
   canvas.height = 600;
-  canvas.style.position = "absolute";
-  canvas.style.border = "1px solid";
-  document.body.appendChild(canvas);
   document.getElementById("addNode")?.addEventListener("click", (e: MouseEvent) => {
     addNode();
     clear();

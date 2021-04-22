@@ -5,3 +5,8 @@ input[type="text"] {
 #traverseTree {
   margin-bottom: 20px;
 }
+
+#myCanvas {
+  position: absolute;
+  border: 1px solid black;
+}
